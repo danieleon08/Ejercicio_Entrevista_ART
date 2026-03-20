@@ -42,6 +42,6 @@ Entre mayor sea las cantidad de números que genera, la probabilidad cumplira me
 
 ## Ejecutar 
 Ejecuta el archivo principal:
-    ```bash
+    
     python main.py
-    ```
+    
