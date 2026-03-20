@@ -39,11 +39,9 @@ La solución se basa en tres pasos fundamentales, utilizando el método de **mue
 Al ejecutar el script de pruebas (`main.py`), se genera una tabla de frecuencias. Así es como se deben interpretar los datos.
 En esta interpretacion se podra evidenciar si la distribucion es apropiada, esto pasa si el porcentaje de frecuencia de todos los numeros es muy parecida y cercana 14.28% (100/7)
 Entre mayor sea las cantidad de números que genera, la probabilidad cumplira mejor estas condiciones.
-## 🛠️ Cómo ejecutar el proyecto
 
-1.  Asegúrate de tener todos los archivos en la misma carpeta.
-2.  Abre una terminal en esa ubicación.
-3.  Ejecuta el archivo principal:
+## Ejecutar 
+Ejecuta el archivo principal:
     ```bash
     python main.py
     ```
