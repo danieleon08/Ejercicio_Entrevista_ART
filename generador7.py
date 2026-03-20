@@ -1,14 +1,10 @@
-import random
-
-# Función 1: Generador de números aleatorios del 1 al 5.
-def generador5():
-    return random.randint(1, 5)
+from generador5 import gen5
 
 # Función 2: Generador de números aleatorios del 1 al 7 usando generador5.
-def generador7():
+def gen7():
     while True:
         # 1. Se crea un generador de números aleatorios del 1 al 25 uniformemente distribuidos, usando dos llamadas a generador5
-        resultado = 5 * (generador5() - 1) + generador5()
+        resultado = 5 * (gen5() - 1) + gen5()
         
         # 2. Queremos que apartir de este generador5, podamos crear uno de 7.
         # Para esto, necesitamos números del 1 al 21 (porque 21 es el múltiplo de 7, es el más cercano a 25).
@@ -24,14 +20,6 @@ def generador7():
             # Ejemplo:
             # Si resultado es 1, 8 o 15; el código devuelve 1.
             # Si resultado es 7, 14 o 21; el código devuelve 7.
+
+
         
-
-
-# Aplicacion y prueba del generador7
-estadisticas = {i: 0 for i in range(1, 8)}
-for _ in range(2000):
-    estadisticas[generador7()] += 1
-
-print("Distribución tras 2,000 intentos:")
-for num, freq in estadisticas.items():
-    print(f"Número {num}: {freq} veces ({(freq/2000)*100:.2f}%)")
